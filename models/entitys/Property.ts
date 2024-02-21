@@ -5,7 +5,7 @@ export class Property1 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()
@@ -28,7 +28,7 @@ export class Property2 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()
@@ -51,7 +51,7 @@ export class Property3 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()
@@ -74,7 +74,7 @@ export class Property4 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()
@@ -97,7 +97,7 @@ export class Property5 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()
@@ -120,7 +120,7 @@ export class Property6 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()
@@ -143,7 +143,7 @@ export class Property7 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()
@@ -166,7 +166,7 @@ export class Property8 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()
@@ -189,7 +189,7 @@ export class Property9 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()
@@ -212,7 +212,7 @@ export class Property10 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()
@@ -235,7 +235,7 @@ export class Property11 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()
@@ -258,7 +258,7 @@ export class Property12 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()
@@ -281,7 +281,7 @@ export class Property13 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()
@@ -304,7 +304,7 @@ export class Property14 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()
@@ -327,7 +327,7 @@ export class Property15 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()
@@ -350,7 +350,7 @@ export class Property16 extends BaseEntity {
   @Column()
   key: string;
 
-  @Column({ type: "text" })
+  @Column({ type: "mediumtext" })
   value: string;
 
   @Column()

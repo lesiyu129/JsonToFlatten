@@ -242,7 +242,7 @@ export default class main {
     }
     return Property1;
   }
-  public async start() {
+  public async start(name?: string) {
     const connect = this.connect();
     connect
       .then(async (db: any) => {
@@ -250,7 +250,7 @@ export default class main {
           await this.collectionNames(db);
         let i = 0;
         await collectionNames.forEach(async (collectionName) => {
-          if (collectionName.name !== "mission_task_update_records") {
+          if (name && collectionName.name !== name) {
             return;
           }
           const startTime = Date.now();
