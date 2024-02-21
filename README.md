@@ -15,6 +15,12 @@ const mysqldb = {
   dropSchema: true,
   cache: true,
 };
+/**
+ * @param {number} mongo驱动版本 3｜4｜5｜6
+ * @param {string} mongo连接字符串
+ * @param {string} mongo链接表
+ * @param {object} mysql驱动配置
+ */
 const tool = new main(3, url, "lesschat", mysqldb);
 tool.start();
 ```
