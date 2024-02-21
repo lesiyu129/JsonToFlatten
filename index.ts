@@ -128,22 +128,21 @@ export default class main {
         await this.jsonToFlatten(element, flattenArray);
         for (const flatten of flattenArray) {
           for (const key of Object.keys(flatten)) {
-            if (key === "lest_flatten_id") {
-              return;
+            if (key != "lest_flatten_id") {
+              const value = flatten[key];
+              const lest_flatten_id = flatten["lest_flatten_id"];
+              const _oid = String(this.ObjectID());
+              const Property = await this.getProperty(
+                lest_flatten_id ? String(lest_flatten_id) : _oid
+              );
+              const property = new Property(
+                key,
+                String(value),
+                lest_flatten_id ? String(lest_flatten_id) : _oid,
+                lest_flatten_id ? false : true
+              );
+              propertys.push(property);
             }
-            const value = flatten[key];
-            const lest_flatten_id = flatten["lest_flatten_id"];
-            const _oid = String(this.ObjectID());
-            const Property = await this.getProperty(
-              lest_flatten_id ? String(lest_flatten_id) : _oid
-            );
-            const property = new Property(
-              key,
-              String(value),
-              lest_flatten_id ? String(lest_flatten_id) : _oid,
-              lest_flatten_id ? false : true
-            );
-            propertys.push(property);
             // await AppDataSource.manager.save(property)
           }
         }
@@ -251,9 +250,9 @@ export default class main {
           await this.collectionNames(db);
         let i = 0;
         await collectionNames.forEach(async (collectionName) => {
-          // if (collectionName.name !== "mission_task_planck_mes") {
-          //   return;
-          // }
+          if (collectionName.name !== "mission_task_update_records") {
+            return;
+          }
           const startTime = Date.now();
           const countNum = await this.getCollectionAllData(
             db,
