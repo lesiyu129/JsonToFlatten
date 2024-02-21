@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "mongodb3": "npm:mongodb@^3.7.4",
+    "mongodb4": "npm:mongodb@^4.17.2",
+    "mongodb5": "npm:mongodb@^5.9.2",
+    "mongodb6": "npm:mongodb@^6.3.0",
+    "mongoose": "^8.1.3",
+    "mysql2": "^3.9.1",
+    "typeorm": "^0.3.20",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.19"
+  }
+}
